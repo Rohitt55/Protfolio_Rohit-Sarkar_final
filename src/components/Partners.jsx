@@ -1,10 +1,10 @@
 import React from 'react'
-import codeAcademy from "../assets/logos/code-academy.svg"
+import codeAcademy from "../assets/logos/code-academy.png"
 import adove from "../assets/logos/adove.svg"
 import cocaCola from "../assets/logos/cocacola.svg"
-import mattered from "../assets/logos/mattered.svg"
+import mattered from "../assets/logos/mattered.png"
 import subway from "../assets/logos/subway.svg"
-import nationalBank from "../assets/logos/national-bank.svg"
+import nationalBank from "../assets/logos/national-bank.png"
 
 const Partners = () => {
     const partners = [

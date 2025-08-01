@@ -7,7 +7,8 @@ const projectList = [
   {
     title: 'Portfolio Website',
     description: 'Personal portfolio built with React and Tailwind CSS.',
-    github: 'https://github.com/Rohitt55/Protfolio_Rohit-Sarkar'
+    github: 'https://github.com/Rohitt55/Protfolio_Rohit-Sarkar',
+    latestShots: 'https://dribbble.com/rohitsarkar' // Example
   },
   {
     title: 'ExpenseMate - Exp & Inc Tracker',
@@ -15,7 +16,6 @@ const projectList = [
     github: 'https://github.com/Rohitt55/expensemate_playstore_final',
     playstore: 'https://play.google.com/store/apps/details?id=com.rohitsarkar.expensemate&pcampaignid=web_share'
   },
-
 ];
 
 function Projects() {
@@ -66,6 +66,18 @@ function Projects() {
                 className='text-green-400 text-sm hover:underline mt-2 block'
               >
                 Download on Play Store →
+              </a>
+            )}
+
+            {/* Latest Shots Link (optional) */}
+            {project.latestShots && (
+              <a
+                href={project.latestShots}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='text-purple-400 text-sm hover:underline mt-2 block'
+              >
+                Latest Shots →
               </a>
             )}
           </motion.div>

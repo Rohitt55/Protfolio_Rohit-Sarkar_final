@@ -17,12 +17,22 @@ function Navbar() {
       <div className='max-w-7xl mx-auto flex justify-between items-center p-6 relative'>
 
         {/* Left: Email */}
-        <a href="mailto:hello@Rohit.com" className='flex items-center gap-2'>
+        <a 
+          href="mailto:rohi80059@gmail.com" 
+          className='flex items-center gap-2'
+          onClick={(e) => {
+            const isSupported = navigator.userAgent.includes("Android") || navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("Mac");
+            if (!isSupported) {
+              e.preventDefault();
+              window.open("https://mail.google.com/mail/?view=cm&fs=1&to=rohi80059@gmail.com", "_blank");
+            }
+          }}
+        >
           <span className='p-2 bg-gray-800 rounded-full'>
             <MdMailOutline className='text-white' />
           </span>
           <span className={`${isMenuOpen ? "hidden" : "block"} text-gray-300`}>
-            hello@Rohit.com
+            rohi80059@gmail.com
           </span>
         </a>
 

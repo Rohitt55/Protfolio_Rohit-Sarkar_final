@@ -56,15 +56,19 @@ const Hero = () => {
 
 
         {/* btn */}
-        <motion.button 
-            variants={fadeInUp}
-            initial="initial"
-            animate="animate"
-            transition={{ ...transitions.default, delay: 0.6 }}
-            className='mt-8 py-4 px-12 border bg-[#1A1A1A] border-gray-600 text-gray-600 hover:border-gray-400 hover:text-white transition-colors rounded-full cursor-pointer'
-        >
-            Latest Shots
-        </motion.button>
+       <motion.a 
+  href="https://youtu.be/CFGgScX49k8?si=cvOJzLd_ZSDH918k" // <-- Replace with your correct URL
+  target="_blank"
+  rel="noopener noreferrer"
+  variants={fadeInUp}
+  initial="initial"
+  animate="animate"
+  transition={{ ...transitions.default, delay: 0.6 }}
+  className='mt-8 py-4 px-12 border bg-[#1A1A1A] border-gray-600 text-gray-600 hover:border-gray-400 hover:text-white transition-colors rounded-full cursor-pointer inline-block'
+>
+  Latest Shots
+</motion.a>
+
     </div>
   )
 }
