@@ -1,6 +1,6 @@
 # Portfolio
 ![Portfolio-Website](./src/assets/github-cover.webp)
-A personal portfolio website built with [Vite](https://vitejs.dev/) and [React](https://react.dev/).
+
 
 ## Installation
 
